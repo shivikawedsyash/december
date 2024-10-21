@@ -26,7 +26,7 @@ $(document).on('click', function(){
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 25, 2024 00:00:00").getTime();
+var countDownDate = new Date("Dec 5, 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
