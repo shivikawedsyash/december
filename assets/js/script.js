@@ -1,3 +1,9 @@
+// get this url from razor pay
+// Log in and create an account
+// Use test products and build a custom payment page
+// Generate url and add it here
+const RAZOR_PAY_URL = 'https://rzp.io/rzp/3hnbVQz';
+
 (function ($) {
     "use strict";
     $('.sakura-falling').sakura();
@@ -59,6 +65,12 @@ function setCountdown(date) {
     }, 1000);
 }
 
+function setPaymentsGateway() {
+    var giftButton = document.getElementById('gift-btn');
+    giftButton.onclick = function() {
+        window.location.href = RAZOR_PAY_URL;
+    };
+}
 // Start countdown on page load for engagement
 window.onload = function () {
     var engagementAudio = document.getElementById('engagement-audio');
@@ -66,6 +78,7 @@ window.onload = function () {
         engagementAudio.play();
     }
     setCountdown(countdownDates['engagement']);
+    setPaymentsGateway();
 };
 
 // Function to handle tab switching
