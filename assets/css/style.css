@@ -662,3 +662,224 @@ a {
     border: 1px solid transparent;
     border-radius: 4px
 }
+
+/* Tab navigation */
+.tab-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.tab-link {
+	background-color: #674ea7;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	margin-right: 10px;
+	font-size: 16px;
+	transition: background-color 0.3s;
+}
+
+.tab-link:hover {
+	background-color: #5e42a1;
+}
+
+.tab-link.active {
+	background-color: #874562;
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+body {
+	font-family: 'Arvo', serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+
+.tab-container {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.tab-link {
+	background-color: #e84393;
+	color: white;
+	padding: 10px 20px;
+	margin: 0 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.tab-link:hover {
+	background-color: #c0367b;
+}
+
+.tab-link.active {
+	background-color: #9b315b;
+}
+
+.tab-content {
+	display: none;
+	position: relative;
+	text-align: center;
+	padding: 40px;
+	color: white;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+.wrap {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.background-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+#engagement .background-overlay {
+	background-image: url('../engagement.png');
+}
+
+#wedding .background-overlay {
+	background-image: url('../wedding.png');
+}
+
+.title {
+	color: white;
+}
+
+.venue {
+	background-color: #9b315b;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.venue:hover {
+	background-color: #7a2547;
+}
+
+.footer {
+	text-align: center;
+	margin: 20px;
+}
+
+.music {
+	display: none;
+}
+
+body {
+	font-family: 'Arvo', serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+
+.tab-container {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.tab-link {
+	background-color: #e84393;
+	color: white;
+	padding: 10px 20px;
+	margin: 0 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.tab-link:hover {
+	background-color: #c0367b;
+}
+
+.tab-link.active {
+	background-color: #9b315b;
+}
+
+.tab-content {
+	display: none;
+	text-align: center;
+	padding: 40px;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+.wrap {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.image-container img {
+	width: 60%;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+
+.title {
+	color: #333;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.venue {
+	background-color: #9b315b;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.venue:hover {
+	background-color: #7a2547;
+}
+
+.footer {
+	text-align: center;
+	margin: 20px;
+}
+
+.music {
+	display: none;
+}
+
