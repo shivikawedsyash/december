@@ -1,0 +1,48 @@
+.gift-btn {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 15px 30px 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Hover Effect */
+  .gift-btn:hover {
+    background-color: #FF4A33;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Ripple Effect */
+  .gift-btn:before {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: all 0.6s ease-out;
+  }
+
+  .gift-btn:active:before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    transition: none;
+  }
+
+  /* Optional Gift Icon */
+  .gift-btn::after {
+    content: "🎁";
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+  }
